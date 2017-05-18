@@ -1,0 +1,787 @@
+<html><head>
+<script type="text/javascript" async="" id="inspsync" src="./js/inspectlet.js"></script>
+<script type="text/javascript">var NREUMQ=NREUMQ||[];NREUMQ.push(["mark","firstbyte",new Date().getTime()]);</script>
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<link href="/favicon.ico" rel="icon" type="image/png">
+<title>Trendline</title>
+<meta content="Trendline" name="description">
+<link data-turbolinks-track="true" href="./css/application.css" media="all" rel="stylesheet">
+<link data-turbolinks-track="true" href="./css/custom.css" media="all" rel="stylesheet">
+<link data-turbolinks-track="true" href="./css/style.css" media="all" rel="stylesheet">
+<script data-turbolinks-track="true" src="./js/application.js"></script>
+<meta content="authenticity_token" name="csrf-param">
+<meta content="rPFsnxbtvbnJDxD4zPIJ51yPuTcfK3XAvC15Oz6mVXY=" name="csrf-token">
+</head>
+<body>
+<header>
+<nav class="navbar navbar-main">
+<div class="container">
+<div class="navbar-header">
+<button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse" type="button">
+<span class="sr-only">Toggle navigation</span>
+MENU
+</button>
+<a class="navbar-brand" href="/">
+Trendline
+</a>
+<ul class="nav navbar-nav navbar-left collapse navbar-collapse">
+</ul>
+</div>
+<div class="collapse navbar-collapse">
+<ul class="nav navbar-nav navbar-right">
+<li>
+<!-- %a{:href => "http://blog.gettrendline.com/"} -->
+<!-- %i.glyphicon.glyphicon-star -->
+<!-- Blog -->
+</li>
+<li>
+<a class="linkedin_link" href="/users/sign_up">Sign Up</a>
+</li>
+<li>
+<a class="linkedin_link" href="/users/sign_in">Sign In</a>
+</li>
+
+</ul>
+</div>
+</div>
+</nav>
+
+</header>
+<main role="main">
+<!-- Begin Inspectlet Embed Code -->
+<script type="text/javascript" id="inspectletjs">
+	// window.__insp = window.__insp || [];
+	// __insp.push(['wid', 414463231]);
+	// (function() {
+	// 	function __ldinsp(){var insp = document.createElement('script'); insp.type = 'text/javascript'; insp.async = true; insp.id = "inspsync"; insp.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://cdn.inspectlet.com/inspectlet.js'; var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(insp, x); }
+	// 	if (window.attachEvent){
+	// 		window.attachEvent('onload', __ldinsp);
+	// 	}else{
+	// 		window.addEventListener('load', __ldinsp, false);
+	// 	}
+	// })();
+</script>
+<!-- End Inspectlet Embed Code -->
+
+<div class="container long-text flex-first">
+<div class="col-md-2 order-item-1">
+<br>
+<br>
+<br>
+<div class="filters-wrapper">
+<form class="filter_form filters-form">
+<div class="form-group">
+<input class="btn btn-block reset_options" type="button" value="Reset">
+</div>
+<!-- .form-group -->
+<!-- %input{type: "button", value: "Ex Outliers", class: "btn btn-block exclude_outliers", :style => "display: none"}/ -->
+<div class="options_section">
+<input id="indexed_options" name="indexed_options" type="hidden" value="">
+<div class="form-group">
+<select class="multiselect sub-seg-multiselect segment_chart" data-init=".seg-multiselect" default_text="Choose Segments" multiple="multiple" name="filter[segment][]" style="display: none;">
+<optgroup class="Airlines" label="Airlines">
+<option id="Airlines" segment="1-1">Airlines</option>
+</optgroup>
+<optgroup class="Automobiles" label="Automobiles">
+<option id="Automobiles" segment="1-1">Automobile Manufacturers</option>
+<option id="Automobiles" segment="1-1">Motorcycle Manufacturers</option>
+</optgroup>
+<optgroup class="Auto Components" label="Auto Components">
+<option id="Auto Components" segment="1-1">Auto Parts &amp; Equipment</option>
+<option id="Auto Components" segment="1-1">Tires &amp; Rubber</option>
+</optgroup>
+<optgroup class="Banks" label="Banks">
+<option id="Banks" segment="1-1">Diversified Banks</option>
+<option id="Banks" segment="1-1">Regional Banks</option>
+<option id="Banks" segment="1-1">Thrifts &amp; Mortgage Finance</option>
+</optgroup>
+<optgroup class="Building Products" label="Building Products">
+<option id="Building Products" segment="1-1">Building Products</option>
+</optgroup>
+<optgroup class="Capital Markets" label="Capital Markets">
+<option id="Capital Markets" segment="1-1">Asset Management &amp; Custody Banks</option>
+<option id="Capital Markets" segment="1-1">Diversified Capital Markets</option>
+<option id="Capital Markets" segment="1-1">Investment Banking &amp; Brokerage</option>
+</optgroup>
+<optgroup class="Commercial Services" label="Commercial Services">
+<option id="Commercial Services" segment="1-1">Commercial Services</option>
+</optgroup>
+<optgroup class="Consumer Discretionary" label="Consumer Discretionary">
+<option id="Consumer Discretionary" segment="1-1">Household Durables</option>
+<option id="Consumer Discretionary" segment="1-1">Textiles, Apparel &amp; Luxury Goods</option>
+</optgroup>
+<optgroup class="Consumer Finance" label="Consumer Finance">
+<option id="Consumer Finance" segment="1-1">Consumer Finance</option>
+</optgroup>
+<optgroup class="Consumer Staples" label="Consumer Staples">
+<option id="Consumer Staples" segment="1-1">Brewers</option>
+<option id="Consumer Staples" segment="1-1">Distillers &amp; Vintners</option>
+<option id="Consumer Staples" segment="1-1">Food Distributors</option>
+<option id="Consumer Staples" segment="1-1">Household Products</option>
+<option id="Consumer Staples" segment="1-1">Packaged Foods &amp; Meats</option>
+<option id="Consumer Staples" segment="1-1">Personal Products</option>
+<option id="Consumer Staples" segment="1-1">Soft Drinks</option>
+<option id="Consumer Staples" segment="1-1">Tobacco</option>
+<option id="Consumer Staples" segment="1-1">Other Consumer Staples</option>
+</optgroup>
+<optgroup class="Energy Equipment &amp; Services" label="Energy Equipment &amp; Services">
+<option id="Energy Equipment &amp; Services" segment="1-1">Energy Equipment &amp; Services</option>
+<option id="Energy Equipment &amp; Services" segment="1-1">Oil &amp; Gas Storage &amp; Transportation</option>
+</optgroup>
+<optgroup class="Financial Exchanges &amp; Data" label="Financial Exchanges &amp; Data">
+<option id="Financial Exchanges &amp; Data" segment="1-1">Financial Exchanges</option>
+<option id="Financial Exchanges &amp; Data" segment="1-1">Financial Data</option>
+</optgroup>
+<optgroup class="Health Care Equipment" label="Health Care Equipment">
+<option id="Health Care Equipment" segment="1-1">Health Care Equipment</option>
+</optgroup>
+<optgroup class="Health Care Providers &amp; Services" label="Health Care Providers &amp; Services">
+<option id="Health Care Providers &amp; Services" segment="1-1">Health Care Distributors</option>
+<option id="Health Care Providers &amp; Services" segment="1-1">Facilities</option>
+<option id="Health Care Providers &amp; Services" segment="1-1">Managed Health Care</option>
+<option id="Health Care Providers &amp; Services" segment="1-1">Services</option>
+</optgroup>
+<optgroup class="Hotels Restaurants &amp; Leisure" label="Hotels Restaurants &amp; Leisure">
+<option id="Hotels Restaurants &amp; Leisure" segment="1-1">Casinos &amp; Gaming</option>
+<option id="Hotels Restaurants &amp; Leisure" segment="1-1">Hotels, Resorts &amp; Cruise Lines</option>
+<option id="Hotels Restaurants &amp; Leisure" segment="1-1">Restaurants</option>
+</optgroup>
+<optgroup class="Industrials" label="Industrials">
+<option id="Industrials" segment="1-1">Aerospace &amp; Defense</option>
+<option id="Industrials" segment="1-1">Industrial Conglomerates</option>
+<option id="Industrials" segment="1-1">Machinery</option>
+<option id="Industrials" segment="1-1">Other Industrials</option>
+</optgroup>
+<optgroup class="Insurance" label="Insurance">
+<option id="Insurance" segment="1-1">Insurance Brokers</option>
+<option id="Insurance" segment="1-1">Life &amp; Health Insurance</option>
+<option id="Insurance" segment="1-1">Property &amp; Casualty Insurance</option>
+</optgroup>
+<optgroup class="Internet Services" label="Internet Services">
+<option id="Internet Services" segment="1-1">Internet Services</option>
+</optgroup>
+<optgroup class="IT Services" label="IT Services">
+<option id="IT Services" segment="1-1">IT Services</option>
+</optgroup>
+<optgroup class="Materials" label="Materials">
+<option id="Materials" segment="1-1">Construction Materials</option>
+<option id="Materials" segment="1-1">Containers &amp; Packaging</option>
+<option id="Materials" segment="1-1">Diversified Chemicals</option>
+<option id="Materials" segment="1-1">Fertilizers &amp; Agricultural Chemicals</option>
+<option id="Materials" segment="1-1">Industrial Gases</option>
+<option id="Materials" segment="1-1">Specialty Chemicals</option>
+</optgroup>
+<optgroup class="Media" label="Media">
+<option id="Media" segment="1-1">Broadcasting</option>
+<option id="Media" segment="1-1">Movies &amp; Entertainment</option>
+<option id="Media" segment="1-1">Publishing</option>
+</optgroup>
+<optgroup class="Oil Gas &amp; Consumable Fuels" label="Oil Gas &amp; Consumable Fuels">
+<option id="Oil Gas &amp; Consumable Fuels" segment="1-1">Integrated Oil &amp; Gas</option>
+<option id="Oil Gas &amp; Consumable Fuels" segment="1-1">Oil &amp; Gas Exploration &amp; Production</option>
+<option id="Oil Gas &amp; Consumable Fuels" segment="1-1">Oil &amp; Gas Refining &amp; Marketing</option>
+</optgroup>
+<optgroup class="Other" label="Other">
+<option id="Other" segment="1-1">Agricultural Products</option>
+<option id="Other" segment="1-1">Construction &amp; Engineering</option>
+<option id="Other" segment="1-1">Homebuilding</option>
+<option id="Other" segment="1-1">Investment Company</option>
+<option id="Other" segment="1-1">Metals &amp; Mining</option>
+<option id="Other" segment="1-1">Other</option>
+<option id="Other" segment="1-1">Paper &amp; Forest Products</option>
+<option id="Other" segment="1-1">Real Estate Management &amp; Development</option>
+</optgroup>
+<optgroup class="Payments" label="Payments">
+<option id="Payments" segment="1-1">Payments</option>
+</optgroup>
+<optgroup class="Pharma &amp; Biotech" label="Pharma &amp; Biotech">
+<option id="Pharma &amp; Biotech" segment="1-1">Pharma &amp; Biotech</option>
+</optgroup>
+<optgroup class="Professional Services" label="Professional Services">
+<option id="Professional Services" segment="1-1">Professional Services</option>
+</optgroup>
+<optgroup class="REIT" label="REIT">
+<option id="REIT" segment="1-1">Diversified</option>
+<option id="REIT" segment="1-1">Health Care</option>
+<option id="REIT" segment="1-1">Hotel &amp; Resort</option>
+<option id="REIT" segment="1-1">Industrial</option>
+<option id="REIT" segment="1-1">Office</option>
+<option id="REIT" segment="1-1">Residential</option>
+<option id="REIT" segment="1-1">Retail</option>
+<option id="REIT" segment="1-1">Specialized</option>
+</optgroup>
+<optgroup class="Retailing" label="Retailing">
+<option id="Retailing" segment="1-1">Apparel</option>
+<option id="Retailing" segment="1-1">Automotive</option>
+<option id="Retailing" segment="1-1">Computer &amp; Electronics</option>
+<option id="Retailing" segment="1-1">Department Stores</option>
+<option id="Retailing" segment="1-1">Distributors</option>
+<option id="Retailing" segment="1-1">Drug</option>
+<option id="Retailing" segment="1-1">Food</option>
+<option id="Retailing" segment="1-1">General Merchandise</option>
+<option id="Retailing" segment="1-1">Home Improvement</option>
+<option id="Retailing" segment="1-1">Hypermarkets &amp; Super Centers</option>
+<option id="Retailing" segment="1-1">Specialty</option>
+</optgroup>
+<optgroup class="Semiconductors" label="Semiconductors">
+<option id="Semiconductors" segment="1-1">Semiconductors</option>
+<option id="Semiconductors" segment="1-1">Semiconductor Equipment</option>
+</optgroup>
+<optgroup class="Software" label="Software">
+<option id="Software" segment="1-1" selected="selected">Software</option>
+<option id="Software" segment="1-1" selected="selected">SaaS</option>
+</optgroup>
+<optgroup class="Technology Hardware &amp; Equipment" label="Technology Hardware &amp; Equipment">
+<option id="Technology Hardware &amp; Equipment" segment="1-1">Communications</option>
+<option id="Technology Hardware &amp; Equipment" segment="1-1">Consumer</option>
+<option id="Technology Hardware &amp; Equipment" segment="1-1">Other Hardware &amp; Equipment</option>
+</optgroup>
+<optgroup class="Telecommunication Services" label="Telecommunication Services">
+<option id="Telecommunication Services" segment="1-1">Alternative Carriers</option>
+<option id="Telecommunication Services" segment="1-1">Cable &amp; Satellite</option>
+<option id="Telecommunication Services" segment="1-1">Integrated</option>
+<option id="Telecommunication Services" segment="1-1">Wireless</option>
+<option id="Telecommunication Services" segment="1-1">Wireline</option>
+</optgroup>
+<optgroup class="Transportation" label="Transportation">
+<option id="Transportation" segment="1-1">Air Freight &amp; Logistics</option>
+<option id="Transportation" segment="1-1">Railroads</option>
+<option id="Transportation" segment="1-1">Trucking</option>
+</optgroup>
+<optgroup class="Utilities" label="Utilities">
+<option id="Utilities" segment="1-1">Electric</option>
+<option id="Utilities" segment="1-1">Gas</option>
+<option id="Utilities" segment="1-1">Multi</option>
+<option id="Utilities" segment="1-1">Water</option>
+</optgroup>
+</select><div class="btn-group"><ul class="multiselect-container dropdown-menu" style="position:absolute; list-style-type: none;margin:0;padding:0;"><div class="input-prepend" style="padding:3px;"><span class="add-on"><i class="icon-search"></i></span><input class="multiselect-search" type="text" placeholder="Search"></div><li><label style="margin:0;padding:3px 20px 3px 20px;height:100%;" class="multiselect-group">Airlines</label></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="Airlines"> Airlines</label></a></li><li><label style="margin:0;padding:3px 20px 3px 20px;height:100%;" class="multiselect-group">Automobiles</label></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="Automobile Manufacturers"> Automobile Manufacturers</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="Motorcycle Manufacturers"> Motorcycle Manufacturers</label></a></li><li><label style="margin:0;padding:3px 20px 3px 20px;height:100%;" class="multiselect-group">Auto Components</label></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="Auto Parts &amp; Equipment"> Auto Parts &amp; Equipment</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="Tires &amp; Rubber"> Tires &amp; Rubber</label></a></li><li><label style="margin:0;padding:3px 20px 3px 20px;height:100%;" class="multiselect-group">Banks</label></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="Diversified Banks"> Diversified Banks</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="Regional Banks"> Regional Banks</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="Thrifts &amp; Mortgage Finance"> Thrifts &amp; Mortgage Finance</label></a></li><li><label style="margin:0;padding:3px 20px 3px 20px;height:100%;" class="multiselect-group">Building Products</label></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="Building Products"> Building Products</label></a></li><li><label style="margin:0;padding:3px 20px 3px 20px;height:100%;" class="multiselect-group">Capital Markets</label></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="Asset Management &amp; Custody Banks"> Asset Management &amp; Custody Banks</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="Diversified Capital Markets"> Diversified Capital Markets</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="Investment Banking &amp; Brokerage"> Investment Banking &amp; Brokerage</label></a></li><li><label style="margin:0;padding:3px 20px 3px 20px;height:100%;" class="multiselect-group">Commercial Services</label></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="Commercial Services"> Commercial Services</label></a></li><li><label style="margin:0;padding:3px 20px 3px 20px;height:100%;" class="multiselect-group">Consumer Discretionary</label></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="Household Durables"> Household Durables</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="Textiles, Apparel &amp; Luxury Goods"> Textiles, Apparel &amp; Luxury Goods</label></a></li><li><label style="margin:0;padding:3px 20px 3px 20px;height:100%;" class="multiselect-group">Consumer Finance</label></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="Consumer Finance"> Consumer Finance</label></a></li><li><label style="margin:0;padding:3px 20px 3px 20px;height:100%;" class="multiselect-group">Consumer Staples</label></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="Brewers"> Brewers</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="Distillers &amp; Vintners"> Distillers &amp; Vintners</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="Food Distributors"> Food Distributors</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="Household Products"> Household Products</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="Packaged Foods &amp; Meats"> Packaged Foods &amp; Meats</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="Personal Products"> Personal Products</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="Soft Drinks"> Soft Drinks</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="Tobacco"> Tobacco</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="Other Consumer Staples"> Other Consumer Staples</label></a></li><li><label style="margin:0;padding:3px 20px 3px 20px;height:100%;" class="multiselect-group">Energy Equipment &amp; Services</label></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="Energy Equipment &amp; Services"> Energy Equipment &amp; Services</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="Oil &amp; Gas Storage &amp; Transportation"> Oil &amp; Gas Storage &amp; Transportation</label></a></li><li><label style="margin:0;padding:3px 20px 3px 20px;height:100%;" class="multiselect-group">Financial Exchanges &amp; Data</label></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="Financial Exchanges"> Financial Exchanges</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="Financial Data"> Financial Data</label></a></li><li><label style="margin:0;padding:3px 20px 3px 20px;height:100%;" class="multiselect-group">Health Care Equipment</label></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="Health Care Equipment"> Health Care Equipment</label></a></li><li><label style="margin:0;padding:3px 20px 3px 20px;height:100%;" class="multiselect-group">Health Care Providers &amp; Services</label></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="Health Care Distributors"> Health Care Distributors</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="Facilities"> Facilities</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="Managed Health Care"> Managed Health Care</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="Services"> Services</label></a></li><li><label style="margin:0;padding:3px 20px 3px 20px;height:100%;" class="multiselect-group">Hotels Restaurants &amp; Leisure</label></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="Casinos &amp; Gaming"> Casinos &amp; Gaming</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="Hotels, Resorts &amp; Cruise Lines"> Hotels, Resorts &amp; Cruise Lines</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="Restaurants"> Restaurants</label></a></li><li><label style="margin:0;padding:3px 20px 3px 20px;height:100%;" class="multiselect-group">Industrials</label></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="Aerospace &amp; Defense"> Aerospace &amp; Defense</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="Industrial Conglomerates"> Industrial Conglomerates</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="Machinery"> Machinery</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="Other Industrials"> Other Industrials</label></a></li><li><label style="margin:0;padding:3px 20px 3px 20px;height:100%;" class="multiselect-group">Insurance</label></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="Insurance Brokers"> Insurance Brokers</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="Life &amp; Health Insurance"> Life &amp; Health Insurance</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="Property &amp; Casualty Insurance"> Property &amp; Casualty Insurance</label></a></li><li><label style="margin:0;padding:3px 20px 3px 20px;height:100%;" class="multiselect-group">Internet Services</label></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="Internet Services"> Internet Services</label></a></li><li><label style="margin:0;padding:3px 20px 3px 20px;height:100%;" class="multiselect-group">IT Services</label></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="IT Services"> IT Services</label></a></li><li><label style="margin:0;padding:3px 20px 3px 20px;height:100%;" class="multiselect-group">Materials</label></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="Construction Materials"> Construction Materials</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="Containers &amp; Packaging"> Containers &amp; Packaging</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="Diversified Chemicals"> Diversified Chemicals</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="Fertilizers &amp; Agricultural Chemicals"> Fertilizers &amp; Agricultural Chemicals</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="Industrial Gases"> Industrial Gases</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="Specialty Chemicals"> Specialty Chemicals</label></a></li><li><label style="margin:0;padding:3px 20px 3px 20px;height:100%;" class="multiselect-group">Media</label></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="Broadcasting"> Broadcasting</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="Movies &amp; Entertainment"> Movies &amp; Entertainment</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="Publishing"> Publishing</label></a></li><li><label style="margin:0;padding:3px 20px 3px 20px;height:100%;" class="multiselect-group">Oil Gas &amp; Consumable Fuels</label></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="Integrated Oil &amp; Gas"> Integrated Oil &amp; Gas</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="Oil &amp; Gas Exploration &amp; Production"> Oil &amp; Gas Exploration &amp; Production</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="Oil &amp; Gas Refining &amp; Marketing"> Oil &amp; Gas Refining &amp; Marketing</label></a></li><li><label style="margin:0;padding:3px 20px 3px 20px;height:100%;" class="multiselect-group">Other</label></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="Agricultural Products"> Agricultural Products</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="Construction &amp; Engineering"> Construction &amp; Engineering</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="Homebuilding"> Homebuilding</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="Investment Company"> Investment Company</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="Metals &amp; Mining"> Metals &amp; Mining</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="Other"> Other</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="Paper &amp; Forest Products"> Paper &amp; Forest Products</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="Real Estate Management &amp; Development"> Real Estate Management &amp; Development</label></a></li><li><label style="margin:0;padding:3px 20px 3px 20px;height:100%;" class="multiselect-group">Payments</label></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="Payments"> Payments</label></a></li><li><label style="margin:0;padding:3px 20px 3px 20px;height:100%;" class="multiselect-group">Pharma &amp; Biotech</label></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="Pharma &amp; Biotech"> Pharma &amp; Biotech</label></a></li><li><label style="margin:0;padding:3px 20px 3px 20px;height:100%;" class="multiselect-group">Professional Services</label></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="Professional Services"> Professional Services</label></a></li><li><label style="margin:0;padding:3px 20px 3px 20px;height:100%;" class="multiselect-group">REIT</label></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="Diversified"> Diversified</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="Health Care"> Health Care</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="Hotel &amp; Resort"> Hotel &amp; Resort</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="Industrial"> Industrial</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="Office"> Office</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="Residential"> Residential</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="Retail"> Retail</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="Specialized"> Specialized</label></a></li><li><label style="margin:0;padding:3px 20px 3px 20px;height:100%;" class="multiselect-group">Retailing</label></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="Apparel"> Apparel</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="Automotive"> Automotive</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="Computer &amp; Electronics"> Computer &amp; Electronics</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="Department Stores"> Department Stores</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="Distributors"> Distributors</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="Drug"> Drug</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="Food"> Food</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="General Merchandise"> General Merchandise</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="Home Improvement"> Home Improvement</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="Hypermarkets &amp; Super Centers"> Hypermarkets &amp; Super Centers</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="Specialty"> Specialty</label></a></li><li><label style="margin:0;padding:3px 20px 3px 20px;height:100%;" class="multiselect-group">Semiconductors</label></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="Semiconductors"> Semiconductors</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="Semiconductor Equipment"> Semiconductor Equipment</label></a></li><li><label style="margin:0;padding:3px 20px 3px 20px;height:100%;" class="multiselect-group">Software</label></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="Software"> Software</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="SaaS"> SaaS</label></a></li><li><label style="margin:0;padding:3px 20px 3px 20px;height:100%;" class="multiselect-group">Technology Hardware &amp; Equipment</label></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="Communications"> Communications</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="Consumer"> Consumer</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="Other Hardware &amp; Equipment"> Other Hardware &amp; Equipment</label></a></li><li><label style="margin:0;padding:3px 20px 3px 20px;height:100%;" class="multiselect-group">Telecommunication Services</label></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="Alternative Carriers"> Alternative Carriers</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="Cable &amp; Satellite"> Cable &amp; Satellite</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="Integrated"> Integrated</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="Wireless"> Wireless</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="Wireline"> Wireline</label></a></li><li><label style="margin:0;padding:3px 20px 3px 20px;height:100%;" class="multiselect-group">Transportation</label></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="Air Freight &amp; Logistics"> Air Freight &amp; Logistics</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="Railroads"> Railroads</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="Trucking"> Trucking</label></a></li><li><label style="margin:0;padding:3px 20px 3px 20px;height:100%;" class="multiselect-group">Utilities</label></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="Electric"> Electric</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="Gas"> Gas</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="Multi"> Multi</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="Water"> Water</label></a></li></ul><button type="button" class="multiselect dropdown-toggle btn" data-toggle="dropdown" style="width: 185px;">Software, SaaS <b class="caret"></b></button></div>
+</div>
+<div class="form-group">
+<input name="filter[country][]" type="hidden" value=""><select class="multiselect sub-seg-multiselect countries" data-init=".sub-seg-multiselect" default_text="Choose Countries" id="filter_country" multiple="multiple" name="filter[country][]" style="display:none; overflow: hidden"><option value="multiselect-all"> Select all</option><option value="ARGENTINA">ARGENTINA</option>
+<option value="AUSTRALIA">AUSTRALIA</option>
+<option value="BERMUDA">BERMUDA</option>
+<option value="BRAZIL">BRAZIL</option>
+<option value="Canada">Canada</option>
+<option value="CANADA">CANADA</option>
+<option value="CAYMAN ISLANDS">CAYMAN ISLANDS</option>
+<option value="CHILE">CHILE</option>
+<option value="CHINA">CHINA</option>
+<option value="COLOMBIA">COLOMBIA</option>
+<option value="DENMARK">DENMARK</option>
+<option value="FINLAND">FINLAND</option>
+<option value="FRANCE">FRANCE</option>
+<option value="GERMANY">GERMANY</option>
+<option value="HONG KONG">HONG KONG</option>
+<option value="INDIA">INDIA</option>
+<option value="INDONESIA">INDONESIA</option>
+<option value="IRELAND">IRELAND</option>
+<option value="ISRAEL">ISRAEL</option>
+<option value="ITALY">ITALY</option>
+<option value="JAPAN">JAPAN</option>
+<option value="KOREA, REPUBLIC OF">KOREA, REPUBLIC OF</option>
+<option value="LUXEMBOURG">LUXEMBOURG</option>
+<option value="MEXICO">MEXICO</option>
+<option value="NETHERLANDS">NETHERLANDS</option>
+<option value="NORWAY">NORWAY</option>
+<option value="PERU">PERU</option>
+<option value="PHILIPPINES">PHILIPPINES</option>
+<option value="RUSSIAN FEDERATION">RUSSIAN FEDERATION</option>
+<option value="SINGAPORE">SINGAPORE</option>
+<option value="SOUTH AFRICA">SOUTH AFRICA</option>
+<option value="SPAIN">SPAIN</option>
+<option value="SWEDEN">SWEDEN</option>
+<option value="SWITZERLAND">SWITZERLAND</option>
+<option value="TAIWAN, PROVINCE OF CHINA">TAIWAN, PROVINCE OF CHINA</option>
+<option value="UNITED KINGDOM">UNITED KINGDOM</option>
+<option value="UNITED STATES">UNITED STATES</option></select><div class="btn-group"><ul class="multiselect-container dropdown-menu" style="position:absolute; list-style-type: none;margin:0;padding:0;"><div class="input-prepend" style="padding:3px;"><span class="add-on"><i class="icon-search"></i></span><input class="multiselect-search" type="text" placeholder="Search"></div><li><a href="javascript:void(0);" style="padding:0;" class="multiselect-all"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="multiselect-all">  Select all</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="ARGENTINA"> ARGENTINA</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="AUSTRALIA"> AUSTRALIA</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="BERMUDA"> BERMUDA</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="BRAZIL"> BRAZIL</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="Canada"> Canada</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="CANADA"> CANADA</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="CAYMAN ISLANDS"> CAYMAN ISLANDS</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="CHILE"> CHILE</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="CHINA"> CHINA</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="COLOMBIA"> COLOMBIA</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="DENMARK"> DENMARK</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="FINLAND"> FINLAND</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="FRANCE"> FRANCE</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="GERMANY"> GERMANY</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="HONG KONG"> HONG KONG</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="INDIA"> INDIA</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="INDONESIA"> INDONESIA</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="IRELAND"> IRELAND</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="ISRAEL"> ISRAEL</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="ITALY"> ITALY</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="JAPAN"> JAPAN</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="KOREA, REPUBLIC OF"> KOREA, REPUBLIC OF</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="LUXEMBOURG"> LUXEMBOURG</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="MEXICO"> MEXICO</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="NETHERLANDS"> NETHERLANDS</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="NORWAY"> NORWAY</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="PERU"> PERU</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="PHILIPPINES"> PHILIPPINES</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="RUSSIAN FEDERATION"> RUSSIAN FEDERATION</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="SINGAPORE"> SINGAPORE</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="SOUTH AFRICA"> SOUTH AFRICA</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="SPAIN"> SPAIN</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="SWEDEN"> SWEDEN</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="SWITZERLAND"> SWITZERLAND</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="TAIWAN, PROVINCE OF CHINA"> TAIWAN, PROVINCE OF CHINA</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="UNITED KINGDOM"> UNITED KINGDOM</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="UNITED STATES"> UNITED STATES</label></a></li></ul><button type="button" class="multiselect dropdown-toggle btn" data-toggle="dropdown" style="width: 185px;">Choose Countries <b class="caret"></b></button></div>
+</div>
+<div class="companies_section form-group">
+<div class="form-group">
+<input name="filter[include_companies][]" type="hidden" value=""><select class="multiselect sub-seg-multiselect include_companies" data-init=".sub-seg-multiselect" default_text="Companies" id="include_c" multiple="multiple" name="filter[include_companies][]" style="display:none; overflow: hidden"><option value="multiselect-all"> Select all</option><option selected="selected" value="214">2U</option>
+<option selected="selected" value="38675">3D Systems Corporation</option>
+<option selected="selected" value="38517">Activision Blizzard</option>
+<option selected="selected" value="38497">Adobe Systems</option>
+<option selected="selected" value="38663">Allscripts</option>
+<option selected="selected" value="38669">Amaya</option>
+<option selected="selected" value="38643">Amdocs</option>
+<option selected="selected" value="38627">ANSYS</option>
+<option selected="selected" value="6101">Appfolio</option>
+<option selected="selected" value="38653">athenahealth</option>
+<option selected="selected" value="162">Atlassian</option>
+<option selected="selected" value="38520">Autodesk</option>
+<option selected="selected" value="38835">Automatic Data Processing</option>
+<option selected="selected" value="1263">Bazaarvoice</option>
+<option selected="selected" value="38503">Benefitfocus</option>
+<option selected="selected" value="38523">Blackbaud</option>
+<option selected="selected" value="38652">Black Knight Financial Services</option>
+<option selected="selected" value="38688">Bottomline Technologies</option>
+<option selected="selected" value="108">Box</option>
+<option selected="selected" value="38680">BroadSoft</option>
+<option selected="selected" value="38629">Cadence</option>
+<option selected="selected" value="38510">CallidusCloud</option>
+<option selected="selected" value="4424">Carbonite</option>
+<option selected="selected" value="5800">Castlight Health</option>
+<option selected="selected" value="38617">CA Technologies</option>
+<option selected="selected" value="38628">CDK Global</option>
+<option selected="selected" value="38518">Check Point Software Technologies</option>
+<option selected="selected" value="10216">Citrix</option>
+<option selected="selected" value="2956">Cornerstone OnDemand</option>
+<option selected="selected" value="38676">CyberArk Software</option>
+<option selected="selected" value="38673">Descartes Systems</option>
+<option selected="selected" value="38504">Ebix</option>
+<option selected="selected" value="38640">Electronic Arts</option>
+<option selected="selected" value="38662">Ellie Mae</option>
+<option selected="selected" value="39526">Envestnet</option>
+<option selected="selected" value="39355">Fidelity National Information Services</option>
+<option selected="selected" value="2396">FireEye</option>
+<option selected="selected" value="38848">Fiserv</option>
+<option selected="selected" value="6951">Five9</option>
+<option selected="selected" value="38650">Fortinet</option>
+<option selected="selected" value="38512">Guidewire Software</option>
+<option selected="selected" value="139">Hortonworks</option>
+<option selected="selected" value="110">HubSpot</option>
+<option selected="selected" value="38618">IBM</option>
+<option selected="selected" value="38682">Imperva</option>
+<option selected="selected" value="230">Instructure</option>
+<option selected="selected" value="38516">Intuit</option>
+<option selected="selected" value="1387">Jive Software</option>
+<option selected="selected" value="38654">Manhattan Associates</option>
+<option selected="selected" value="2385">Marin Software</option>
+<option selected="selected" value="38660">Medidata Solutions</option>
+<option selected="selected" value="38469">Microsoft</option>
+<option selected="selected" value="38667">MicroStrategy</option>
+<option selected="selected" value="127">MINDBODY</option>
+<option selected="selected" value="2537">MobileIron</option>
+<option selected="selected" value="22">New Relic</option>
+<option selected="selected" value="39527">NIC</option>
+<option selected="selected" value="39573">NICE-Systems Limited</option>
+<option selected="selected" value="38630">Nuance</option>
+<option selected="selected" value="38514">OpenText</option>
+<option selected="selected" value="38496">Oracle</option>
+<option selected="selected" value="38641">Paychex</option>
+<option selected="selected" value="38524">Paycom</option>
+<option selected="selected" value="14710">Paylocity</option>
+<option selected="selected" value="38671">Pegasystems</option>
+<option selected="selected" value="38678">Progress Software</option>
+<option selected="selected" value="2409">Proofpoint</option>
+<option selected="selected" value="38655">PTC</option>
+<option selected="selected" value="3241">Q2 Holdings</option>
+<option selected="selected" value="38686">Qualys</option>
+<option selected="selected" value="38525">RealPage</option>
+<option selected="selected" value="38519">Red Hat</option>
+<option selected="selected" value="38644">Sabre</option>
+<option selected="selected" value="38478">Salesforce</option>
+<option selected="selected" value="38515">SAP</option>
+<option selected="selected" value="39528">SecureWorks Corp.</option>
+<option selected="selected" value="1991">ServiceNow</option>
+<option selected="selected" value="46">Shopify</option>
+<option selected="selected" value="4311">Splunk</option>
+<option selected="selected" value="38649">SS&amp;C Technologies</option>
+<option selected="selected" value="38471">Symantec</option>
+<option selected="selected" value="38633">Synopsys</option>
+<option selected="selected" value="13831">Tableau</option>
+<option selected="selected" value="38656">Teradata Corporation</option>
+<option selected="selected" value="23">Twilio</option>
+<option selected="selected" value="38651">Tyler Technologies</option>
+<option selected="selected" value="38623">Ultimate Software</option>
+<option selected="selected" value="1632">Varonis Systems</option>
+<option selected="selected" value="10661">Veeva</option>
+<option selected="selected" value="38668">Verint Systems</option>
+<option selected="selected" value="6102">VMware</option>
+<option selected="selected" value="4248">Vocera Communications</option>
+<option selected="selected" value="39529">WageWorks</option>
+<option selected="selected" value="1986">Workday</option>
+<option selected="selected" value="38513">Workiva</option>
+<option selected="selected" value="6505">Xactly Corporation</option>
+<option selected="selected" value="7">Zendesk</option></select><div class="btn-group"><ul class="multiselect-container dropdown-menu" style="position:absolute; list-style-type: none;margin:0;padding:0;"><div class="input-prepend" style="padding:3px;"><span class="add-on"><i class="icon-search"></i></span><input class="multiselect-search" type="text" placeholder="Search"></div><li><a href="javascript:void(0);" style="padding:0;" class="multiselect-all"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="multiselect-all">  Select all</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="214"> 2U</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="38675"> 3D Systems Corporation</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="38517"> Activision Blizzard</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="38497"> Adobe Systems</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="38663"> Allscripts</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="38669"> Amaya</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="38643"> Amdocs</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="38627"> ANSYS</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="6101"> Appfolio</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="38653"> athenahealth</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="162"> Atlassian</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="38520"> Autodesk</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="38835"> Automatic Data Processing</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="1263"> Bazaarvoice</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="38503"> Benefitfocus</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="38523"> Blackbaud</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="38652"> Black Knight Financial Services</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="38688"> Bottomline Technologies</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="108"> Box</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="38680"> BroadSoft</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="38629"> Cadence</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="38510"> CallidusCloud</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="4424"> Carbonite</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="5800"> Castlight Health</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="38617"> CA Technologies</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="38628"> CDK Global</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="38518"> Check Point Software Technologies</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="10216"> Citrix</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="2956"> Cornerstone OnDemand</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="38676"> CyberArk Software</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="38673"> Descartes Systems</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="38504"> Ebix</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="38640"> Electronic Arts</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="38662"> Ellie Mae</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="39526"> Envestnet</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="39355"> Fidelity National Information Services</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="2396"> FireEye</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="38848"> Fiserv</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="6951"> Five9</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="38650"> Fortinet</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="38512"> Guidewire Software</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="139"> Hortonworks</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="110"> HubSpot</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="38618"> IBM</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="38682"> Imperva</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="230"> Instructure</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="38516"> Intuit</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="1387"> Jive Software</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="38654"> Manhattan Associates</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="2385"> Marin Software</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="38660"> Medidata Solutions</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="38469"> Microsoft</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="38667"> MicroStrategy</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="127"> MINDBODY</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="2537"> MobileIron</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="22"> New Relic</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="39527"> NIC</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="39573"> NICE-Systems Limited</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="38630"> Nuance</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="38514"> OpenText</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="38496"> Oracle</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="38641"> Paychex</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="38524"> Paycom</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="14710"> Paylocity</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="38671"> Pegasystems</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="38678"> Progress Software</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="2409"> Proofpoint</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="38655"> PTC</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="3241"> Q2 Holdings</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="38686"> Qualys</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="38525"> RealPage</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="38519"> Red Hat</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="38644"> Sabre</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="38478"> Salesforce</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="38515"> SAP</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="39528"> SecureWorks Corp.</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="1991"> ServiceNow</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="46"> Shopify</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="4311"> Splunk</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="38649"> SS&amp;C Technologies</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="38471"> Symantec</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="38633"> Synopsys</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="13831"> Tableau</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="38656"> Teradata Corporation</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="23"> Twilio</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="38651"> Tyler Technologies</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="38623"> Ultimate Software</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="1632"> Varonis Systems</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="10661"> Veeva</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="38668"> Verint Systems</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="6102"> VMware</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="4248"> Vocera Communications</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="39529"> WageWorks</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="1986"> Workday</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="38513"> Workiva</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="6505"> Xactly Corporation</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="7"> Zendesk</label></a></li></ul><button type="button" class="multiselect dropdown-toggle btn" data-toggle="dropdown" style="width: 185px;">97 selected  <b class="caret"></b></button></div>
+</div>
+<div class="form-group">
+<input name="filter[labeled_companies][]" type="hidden" value=""><select class="multiselect sub-seg-multiselect labeled_companies" data-init=".sub-seg-multiselect" default_text="Company Labels" id="include_labeled_c" multiple="multiple" name="filter[labeled_companies][]" style="display:none; overflow: hidden"><option value="multiselect-all"> Select all</option><option value="214">2U</option>
+<option value="38675">3D Systems Corporation</option>
+<option value="38517">Activision Blizzard</option>
+<option value="38497">Adobe Systems</option>
+<option value="38663">Allscripts</option>
+<option value="38669">Amaya</option>
+<option value="38643">Amdocs</option>
+<option value="38627">ANSYS</option>
+<option value="6101">Appfolio</option>
+<option value="38653">athenahealth</option>
+<option value="162">Atlassian</option>
+<option value="38520">Autodesk</option>
+<option value="38835">Automatic Data Processing</option>
+<option value="1263">Bazaarvoice</option>
+<option value="38503">Benefitfocus</option>
+<option value="38523">Blackbaud</option>
+<option value="38652">Black Knight Financial Services</option>
+<option value="38688">Bottomline Technologies</option>
+<option value="108">Box</option>
+<option value="38680">BroadSoft</option>
+<option value="38629">Cadence</option>
+<option value="38510">CallidusCloud</option>
+<option value="4424">Carbonite</option>
+<option value="5800">Castlight Health</option>
+<option value="38617">CA Technologies</option>
+<option value="38628">CDK Global</option>
+<option value="38518">Check Point Software Technologies</option>
+<option value="10216">Citrix</option>
+<option value="2956">Cornerstone OnDemand</option>
+<option value="38676">CyberArk Software</option>
+<option value="38673">Descartes Systems</option>
+<option value="38504">Ebix</option>
+<option value="38640">Electronic Arts</option>
+<option value="38662">Ellie Mae</option>
+<option value="39526">Envestnet</option>
+<option value="39355">Fidelity National Information Services</option>
+<option value="2396">FireEye</option>
+<option value="38848">Fiserv</option>
+<option value="6951">Five9</option>
+<option value="38650">Fortinet</option>
+<option value="38512">Guidewire Software</option>
+<option value="139">Hortonworks</option>
+<option value="110">HubSpot</option>
+<option value="38618">IBM</option>
+<option value="38682">Imperva</option>
+<option value="230">Instructure</option>
+<option value="38516">Intuit</option>
+<option value="1387">Jive Software</option>
+<option value="38654">Manhattan Associates</option>
+<option value="2385">Marin Software</option>
+<option value="38660">Medidata Solutions</option>
+<option value="38469">Microsoft</option>
+<option value="38667">MicroStrategy</option>
+<option value="127">MINDBODY</option>
+<option value="2537">MobileIron</option>
+<option value="22">New Relic</option>
+<option value="39527">NIC</option>
+<option value="39573">NICE-Systems Limited</option>
+<option value="38630">Nuance</option>
+<option value="38514">OpenText</option>
+<option value="38496">Oracle</option>
+<option value="38641">Paychex</option>
+<option value="38524">Paycom</option>
+<option value="14710">Paylocity</option>
+<option value="38671">Pegasystems</option>
+<option value="38678">Progress Software</option>
+<option value="2409">Proofpoint</option>
+<option value="38655">PTC</option>
+<option value="3241">Q2 Holdings</option>
+<option value="38686">Qualys</option>
+<option value="38525">RealPage</option>
+<option value="38519">Red Hat</option>
+<option value="38644">Sabre</option>
+<option value="38478">Salesforce</option>
+<option value="38515">SAP</option>
+<option value="39528">SecureWorks Corp.</option>
+<option value="1991">ServiceNow</option>
+<option value="46">Shopify</option>
+<option value="4311">Splunk</option>
+<option value="38649">SS&amp;C Technologies</option>
+<option value="38471">Symantec</option>
+<option value="38633">Synopsys</option>
+<option value="13831">Tableau</option>
+<option value="38656">Teradata Corporation</option>
+<option value="23">Twilio</option>
+<option value="38651">Tyler Technologies</option>
+<option value="38623">Ultimate Software</option>
+<option value="1632">Varonis Systems</option>
+<option value="10661">Veeva</option>
+<option value="38668">Verint Systems</option>
+<option value="6102">VMware</option>
+<option value="4248">Vocera Communications</option>
+<option value="39529">WageWorks</option>
+<option value="1986">Workday</option>
+<option value="38513">Workiva</option>
+<option value="6505">Xactly Corporation</option>
+<option value="7">Zendesk</option></select><div class="btn-group"><ul class="multiselect-container dropdown-menu" style="position:absolute; list-style-type: none;margin:0;padding:0;"><div class="input-prepend" style="padding:3px;"><span class="add-on"><i class="icon-search"></i></span><input class="multiselect-search" type="text" placeholder="Search"></div><li><a href="javascript:void(0);" style="padding:0;" class="multiselect-all"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="multiselect-all">  Select all</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="214"> 2U</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="38675"> 3D Systems Corporation</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="38517"> Activision Blizzard</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="38497"> Adobe Systems</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="38663"> Allscripts</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="38669"> Amaya</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="38643"> Amdocs</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="38627"> ANSYS</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="6101"> Appfolio</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="38653"> athenahealth</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="162"> Atlassian</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="38520"> Autodesk</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="38835"> Automatic Data Processing</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="1263"> Bazaarvoice</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="38503"> Benefitfocus</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="38523"> Blackbaud</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="38652"> Black Knight Financial Services</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="38688"> Bottomline Technologies</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="108"> Box</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="38680"> BroadSoft</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="38629"> Cadence</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="38510"> CallidusCloud</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="4424"> Carbonite</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="5800"> Castlight Health</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="38617"> CA Technologies</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="38628"> CDK Global</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="38518"> Check Point Software Technologies</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="10216"> Citrix</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="2956"> Cornerstone OnDemand</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="38676"> CyberArk Software</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="38673"> Descartes Systems</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="38504"> Ebix</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="38640"> Electronic Arts</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="38662"> Ellie Mae</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="39526"> Envestnet</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="39355"> Fidelity National Information Services</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="2396"> FireEye</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="38848"> Fiserv</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="6951"> Five9</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="38650"> Fortinet</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="38512"> Guidewire Software</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="139"> Hortonworks</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="110"> HubSpot</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="38618"> IBM</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="38682"> Imperva</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="230"> Instructure</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="38516"> Intuit</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="1387"> Jive Software</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="38654"> Manhattan Associates</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="2385"> Marin Software</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="38660"> Medidata Solutions</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="38469"> Microsoft</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="38667"> MicroStrategy</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="127"> MINDBODY</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="2537"> MobileIron</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="22"> New Relic</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="39527"> NIC</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="39573"> NICE-Systems Limited</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="38630"> Nuance</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="38514"> OpenText</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="38496"> Oracle</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="38641"> Paychex</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="38524"> Paycom</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="14710"> Paylocity</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="38671"> Pegasystems</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="38678"> Progress Software</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="2409"> Proofpoint</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="38655"> PTC</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="3241"> Q2 Holdings</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="38686"> Qualys</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="38525"> RealPage</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="38519"> Red Hat</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="38644"> Sabre</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="38478"> Salesforce</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="38515"> SAP</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="39528"> SecureWorks Corp.</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="1991"> ServiceNow</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="46"> Shopify</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="4311"> Splunk</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="38649"> SS&amp;C Technologies</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="38471"> Symantec</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="38633"> Synopsys</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="13831"> Tableau</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="38656"> Teradata Corporation</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="23"> Twilio</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="38651"> Tyler Technologies</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="38623"> Ultimate Software</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="1632"> Varonis Systems</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="10661"> Veeva</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="38668"> Verint Systems</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="6102"> VMware</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="4248"> Vocera Communications</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="39529"> WageWorks</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="1986"> Workday</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="38513"> Workiva</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="6505"> Xactly Corporation</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="checkbox" value="7"> Zendesk</label></a></li></ul><button type="button" class="multiselect dropdown-toggle btn" data-toggle="dropdown" style="width: 185px;">Company Labels <b class="caret"></b></button></div>
+</div>
+
+</div>
+<div class="col-md-12" style="padding:0; margin-bottom:15px;">
+<div class="col-md-5 company_month" style="padding:0;">
+<div class="pull-left small">Month</div>
+<select class="multiselect sub-seg-multiselect month_parameter" data-init=".sub-seg-multiselect" id="filter_month_parameter" name="filter[month_parameter]" style="display:none; overflow: hidden"><option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option selected="selected" value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option></select><div class="btn-group"><ul class="multiselect-container dropdown-menu" style="position:absolute; list-style-type: none;margin:0;padding:0;"><div class="input-prepend" style="padding:3px;"><span class="add-on"><i class="icon-search"></i></span><input class="multiselect-search" type="text" placeholder="Search"></div><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="radio" value="1"> 1</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="radio" value="2"> 2</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="radio" value="3"> 3</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="radio" value="4"> 4</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="radio" value="5"> 5</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="radio" value="6"> 6</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="radio" value="7"> 7</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="radio" value="8"> 8</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="radio" value="9"> 9</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="radio" value="10"> 10</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="radio" value="11"> 11</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="radio" value="12"> 12</label></a></li></ul><button type="button" class="multiselect dropdown-toggle btn" data-toggle="dropdown" style="width: 185px;">5 <b class="caret"></b></button></div>
+</div>
+<div class="col-md-5 company_year" style="padding:0; margin-left:16px; width:44%;">
+<div class="pull-left small">Year</div>
+<select class="multiselect sub-seg-multiselect year_parameter" data-init=".sub-seg-multiselect" id="filter_year_parameter" name="filter[year_parameter]" style="display:none; overflow: hidden"><option selected="selected" value="2017">2017</option>
+<option value="2016">2016</option>
+<option value="2015">2015</option>
+<option value="2014">2014</option>
+<option value="2013">2013</option>
+<option value="2012">2012</option>
+<option value="2011">2011</option>
+<option value="2010">2010</option>
+<option value="2009">2009</option>
+<option value="2008">2008</option>
+<option value="2007">2007</option></select><div class="btn-group"><ul class="multiselect-container dropdown-menu" style="position:absolute; list-style-type: none;margin:0;padding:0;"><div class="input-prepend" style="padding:3px;"><span class="add-on"><i class="icon-search"></i></span><input class="multiselect-search" type="text" placeholder="Search"></div><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="radio" value="2017"> 2017</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="radio" value="2016"> 2016</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="radio" value="2015"> 2015</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="radio" value="2014"> 2014</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="radio" value="2013"> 2013</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="radio" value="2012"> 2012</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="radio" value="2011"> 2011</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="radio" value="2010"> 2010</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="radio" value="2009"> 2009</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="radio" value="2008"> 2008</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="radio" value="2007"> 2007</label></a></li></ul><button type="button" class="multiselect dropdown-toggle btn" data-toggle="dropdown" style="width: 185px;">2017 <b class="caret"></b></button></div>
+</div>
+</div>
+<div class="form-group">
+<div class="pull-left small">Growth (X)</div>
+<select class="multiselect sub-seg-multiselect x_cordinate" data-init=".sub-seg-multiselect" default_text="Choose X Cordinate" id="filter_x_cordinate" name="filter[x_cordinate]" style="display:none; overflow: hidden"><option selected="selected" value="Revenue Growth Estimate (F1),revenue_annual_yrly_growth_pct_consensus_estimate_f1">Revenue Growth Estimate (F1)</option>
+<option value="EPS Growth (F2),eps_annual_yrly_growth_pct_consensus_estimate_f2">EPS Growth Estimate (F2)</option>
+<option value="Long-term Growth Estimate,long_term_growth_estimate">Long-term Growth Estimate</option>
+<option value="Revenue Growth Estimate (F0),revenue_annual_yrly_growth_pct_consensus_estimate_f0">Revenue Growth Estimate (F0)</option>
+<option value="Revenue Growth Estimate (F2),revenue_annual_yrly_growth_pct_consensus_estimate_f2">Revenue Growth Estimate (F2)</option>
+<option value="Revenue Growth Estimate (F3),revenue_annual_yrly_growth_pct_consensus_estimate_f3">Revenue Growth Estimate (F3)</option>
+<option value="Revenue Growth Estimate (+5 years),revenue_annual_yrly_growth_pct_consensus_estimate_f5">Revenue Growth Estimate (F5)</option>
+<option value="Historical Revenue Growth (3 yr CAGR),revenue_annual_last_3_yr_CAGR">Historical Revenue Growth (3 yr CAGR)</option>
+<option value="Organic Revenue Growth (most recent quarter),revenue_quarterly_organic_yrly_growth_pct">Organic Growth (most recent quarter)</option>
+<option value="EPS Growth (F1),eps_annual_yrly_growth_pct_consensus_estimate_f1">EPS Growth (F1)</option>
+<option value="Dividend Growth,dividend_growth">Dividend Growth</option></select><div class="btn-group"><ul class="multiselect-container dropdown-menu" style="position:absolute; list-style-type: none;margin:0;padding:0;"><div class="input-prepend" style="padding:3px;"><span class="add-on"><i class="icon-search"></i></span><input class="multiselect-search" type="text" placeholder="Search"></div><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="radio" value="Revenue Growth Estimate (F1),revenue_annual_yrly_growth_pct_consensus_estimate_f1"> Revenue Growth Estimate (F1)</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="radio" value="EPS Growth (F2),eps_annual_yrly_growth_pct_consensus_estimate_f2"> EPS Growth Estimate (F2)</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="radio" value="Long-term Growth Estimate,long_term_growth_estimate"> Long-term Growth Estimate</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="radio" value="Revenue Growth Estimate (F0),revenue_annual_yrly_growth_pct_consensus_estimate_f0"> Revenue Growth Estimate (F0)</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="radio" value="Revenue Growth Estimate (F2),revenue_annual_yrly_growth_pct_consensus_estimate_f2"> Revenue Growth Estimate (F2)</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="radio" value="Revenue Growth Estimate (F3),revenue_annual_yrly_growth_pct_consensus_estimate_f3"> Revenue Growth Estimate (F3)</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="radio" value="Revenue Growth Estimate (+5 years),revenue_annual_yrly_growth_pct_consensus_estimate_f5"> Revenue Growth Estimate (F5)</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="radio" value="Historical Revenue Growth (3 yr CAGR),revenue_annual_last_3_yr_CAGR"> Historical Revenue Growth (3 yr CAGR)</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="radio" value="Organic Revenue Growth (most recent quarter),revenue_quarterly_organic_yrly_growth_pct"> Organic Growth (most recent quarter)</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="radio" value="EPS Growth (F1),eps_annual_yrly_growth_pct_consensus_estimate_f1"> EPS Growth (F1)</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="radio" value="Dividend Growth,dividend_growth"> Dividend Growth</label></a></li></ul><button type="button" class="multiselect dropdown-toggle btn" data-toggle="dropdown" style="width: 185px;">Revenue Growth Estimate (F1) <b class="caret"></b></button></div>
+</div>
+<div class="col-md-12" style="padding:0; margin-bottom:15px;">
+<div class="col-md-5 company_xmin" style="padding:0;">
+<div class="clean-input" style="max-width:110%">
+<div class="pull-left small">X-min</div>
+<input class="min_x inherit-width" id="filter_min_x" name="filter[min_x]" style="max-width: 100%" type="text" value="">
+</div>
+</div>
+<div class="col-md-5 company_xmax" style="padding:0; margin-left:16px; width:44%;">
+<div class="clean-input" style="max-width:110%">
+<div class="pull-left small">X-max</div>
+<input class="max_x inherit-width" id="filter_max_x" name="filter[max_x]" style="max-width: 100%" type="text" value="">
+</div>
+</div>
+</div>
+<div class="form-group">
+<div class="pull-left small">Valuation Multiple (Y)</div>
+<select class="multiselect sub-seg-multiselect y_cordinate" data-init=".sub-seg-multiselect" default_text="Choose Y Cordinate" id="filter_y_cordinate" name="filter[y_cordinate]" style="display:none; overflow: hidden"><option value="Forward P/E (F0),forward_pe_multiple_f0">Forward P/E (F0)</option>
+<option value="Forward P/E (F0 GAAP),forward_pe_multiple_f0_zacks_consensus">Forward P/E (F0 GAAP)</option>
+<option value="Forward P/E (FTM),forward_pe_multiple_ftm">Forward P/E (FTM)</option>
+<option value="Forward P/E (F1),forward_pe_multiple_f1">Forward P/E (F1)</option>
+<option value="Forward P/E (F2),forward_pe_multiple_f2">Forward P/E (F2)</option>
+<option selected="selected" value="Forward EBITDA Multiple (F0),forward_ebitda_multiple_f0">Forward EBITDA Multiple (F0)</option>
+<option value="Forward EBITDA Multiple (F1),forward_ebitda_multiple_f1">Forward EBITDA Multiple (F1)</option>
+<option value="Forward Revenue (F1),revenue_multiple_f1">Forward Revenue (F1)</option></select><div class="btn-group"><ul class="multiselect-container dropdown-menu" style="position:absolute; list-style-type: none;margin:0;padding:0;"><div class="input-prepend" style="padding:3px;"><span class="add-on"><i class="icon-search"></i></span><input class="multiselect-search" type="text" placeholder="Search"></div><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="radio" value="Forward P/E (F0),forward_pe_multiple_f0"> Forward P/E (F0)</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="radio" value="Forward P/E (F0 GAAP),forward_pe_multiple_f0_zacks_consensus"> Forward P/E (F0 GAAP)</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="radio" value="Forward P/E (FTM),forward_pe_multiple_ftm"> Forward P/E (FTM)</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="radio" value="Forward P/E (F1),forward_pe_multiple_f1"> Forward P/E (F1)</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="radio" value="Forward P/E (F2),forward_pe_multiple_f2"> Forward P/E (F2)</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="radio" value="Forward EBITDA Multiple (F0),forward_ebitda_multiple_f0"> Forward EBITDA Multiple (F0)</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="radio" value="Forward EBITDA Multiple (F1),forward_ebitda_multiple_f1"> Forward EBITDA Multiple (F1)</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="radio" value="Forward Revenue (F1),revenue_multiple_f1"> Forward Revenue (F1)</label></a></li></ul><button type="button" class="multiselect dropdown-toggle btn" data-toggle="dropdown" style="width: 185px;">Forward EBITDA Multiple (F0) <b class="caret"></b></button></div>
+</div>
+<div class="col-md-12" style="padding:0; margin-bottom:15px;">
+<div class="col-md-5 company_xmin" style="padding:0;">
+<div class="clean-input" style="max-width:110%">
+<div class="pull-left small">Y-min</div>
+<input class="min_y inherit-width" id="filter_min_y" name="filter[min_y]" style="max-width: 100%" type="text" value="">
+</div>
+</div>
+<div class="col-md-5 company_ymax" style="padding:0; margin-left:16px; width:44%;">
+<div class="clean-input" style="max-width:110%">
+<div class="pull-left small">Y-max</div>
+<input class="max_y inherit-width" id="filter_max_y" name="filter[max_y]" style="max-width: 100%" type="text" value="">
+</div>
+</div>
+</div>
+<div class="col-md-12" style="padding:0; margin-bottom:15px;">
+<div class="col-md-5 company_capmin" style="padding:0;">
+<div class="clean-input" style="max-width:110%">
+<div class="pull-left small">Cap-Min</div>
+<input class="ent_min inherit-width" id="filter_cap_min" name="filter[cap_min]" style="max-width: 100%" type="text" value="">
+</div>
+</div>
+<div class="col-md-5 company_capmax" style="padding:0; margin-left:16px; width:44%;">
+<div class="clean-input" style="max-width:110%">
+<div class="pull-left small">Cap-Max</div>
+<input class="ent_max inherit-width" id="filter_cap_max" name="filter[cap_max]" style="max-width: 100%" type="text" value="">
+</div>
+</div>
+</div>
+<div class="col-md-12" style="padding:0; margin-bottom:15px;">
+<div class="col-md-5 company_revmin" style="padding:0;">
+<div class="clean-input" style="max-width:110%">
+<div class="pull-left small">Rev-Min</div>
+<input class="rev_min inherit-width" id="filter_rev_min" name="filter[rev_min]" style="max-width: 100%" type="text" value="">
+</div>
+</div>
+<div class="col-md-5 company_revmax" style="padding:0; margin-left:16px; width:44%;">
+<div class="clean-input" style="max-width:110%">
+<div class="pull-left small">Rev-Max</div>
+<input class="rev_max inherit-width" id="filter_rev_max" name="filter[rev_max]" style="max-width: 100%" type="text" value="">
+</div>
+</div>
+</div>
+<!-- .form-group -->
+<!-- .pull-left.small Trendline Companies -->
+<!-- = select("filter", "trendline", options_for_select(indexed_list, @trendline), {}, {:class => "multiselect sub-seg-multiselect trendline_value", "data-init" => ".sub-seg-multiselect", :style => "display:none; overflow: hidden", "default_text" => "Choose TrendLine"}) -->
+<div class="form-group">
+<div class="pull-left small">Bubble Size</div>
+<select class="multiselect sub-seg-multiselect size_parameter" data-init=".sub-seg-multiselect" default_text="Choose Parameter" id="filter_size_parameter" name="filter[size_parameter]" style="display:none; overflow: hidden"><option selected="selected" value="Default">None</option>
+<option value="monthly_growth_pct_for_share_price,share_price,monthly_growth_percentage">Stock Price +/- (month-to-date)</option>
+<option value="ytd_growth_for_share_price,share_price,ytd_growth">Stock Price +/- (year-to-date)</option>
+<option value="price_target_mean_vs_share_price,price_target_mean_vs_share_price">Price vs. Price Target</option>
+<option value="market_capitalization,market_capitalization">Market Capitalization</option>
+<option value="enterprise_value,enterprise_value">Enterprise Value</option>
+<option value="revenue_annual,revenue_annual">Revenue (Annual)</option>
+<option value="revenue_quarterly_organic_yrly_growth_pct,revenue_quarterly_organic_yrly_growth_pct">Organic Revenue Growth</option>
+<option value="same_store_growth_quarterly,same_store_growth_quarterly">Same Store Growth</option>
+<option value="revenue_quarterly_vs_estimate,revenue_quarterly_vs_estimate">Revenue Quarterly vs. Estimate %</option>
+<option value="pct_chg_est_3M,pct_chg_est_3M">Revenue Estimate Inc/Dec % (last 3 months)</option>
+<option value="eps_annual_consensus_estimate_std_dev_f1,eps_annual_consensus_estimate_std_dev_f1">EPS Estimate Std Dev</option>
+<option value="beta_unlevered,beta_unlevered">Beta</option>
+<option value="dividend_yield_annualized,dividend_yield_annualized">Yield</option></select><div class="btn-group"><ul class="multiselect-container dropdown-menu" style="position:absolute; list-style-type: none;margin:0;padding:0;"><div class="input-prepend" style="padding:3px;"><span class="add-on"><i class="icon-search"></i></span><input class="multiselect-search" type="text" placeholder="Search"></div><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="radio" value="Default"> None</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="radio" value="monthly_growth_pct_for_share_price,share_price,monthly_growth_percentage"> Stock Price +/- (month-to-date)</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="radio" value="ytd_growth_for_share_price,share_price,ytd_growth"> Stock Price +/- (year-to-date)</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="radio" value="price_target_mean_vs_share_price,price_target_mean_vs_share_price"> Price vs. Price Target</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="radio" value="market_capitalization,market_capitalization"> Market Capitalization</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="radio" value="enterprise_value,enterprise_value"> Enterprise Value</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="radio" value="revenue_annual,revenue_annual"> Revenue (Annual)</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="radio" value="revenue_quarterly_organic_yrly_growth_pct,revenue_quarterly_organic_yrly_growth_pct"> Organic Revenue Growth</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="radio" value="same_store_growth_quarterly,same_store_growth_quarterly"> Same Store Growth</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="radio" value="revenue_quarterly_vs_estimate,revenue_quarterly_vs_estimate"> Revenue Quarterly vs. Estimate %</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="radio" value="pct_chg_est_3M,pct_chg_est_3M"> Revenue Estimate Inc/Dec % (last 3 months)</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="radio" value="eps_annual_consensus_estimate_std_dev_f1,eps_annual_consensus_estimate_std_dev_f1"> EPS Estimate Std Dev</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="radio" value="beta_unlevered,beta_unlevered"> Beta</label></a></li><li><a href="javascript:void(0);" style="padding:0;"><label style="margin:0;padding:3px 20px 3px 20px;height:100%;cursor:pointer;"><input style="margin-bottom:5px;" type="radio" value="dividend_yield_annualized,dividend_yield_annualized"> Yield</label></a></li></ul><button type="button" class="multiselect dropdown-toggle btn" data-toggle="dropdown" style="width: 185px;">None <b class="caret"></b></button></div>
+</div>
+<div class="form-group">
+<input class="btn btn-orange btn-block customized_chart" type="button" value="Load">
+</div>
+<div class="form-group pull-left" style="width: 100%">
+<div style="float: left">
+<input checked="" class="excl_sp_500" name="excl_sp_500" type="checkbox">
+S&amp;P 500
+<i class="glyphicon glyphicon-question-sign" style="color: #428bca" title="Regression analysis limited to S&amp;P 500 companies."></i>
+</div>
+</div>
+<div class="form-group pull-left" style="width: 100%">
+<div style="float: left">
+<input class="include_sp500_only" name="include_sp500_only" type="checkbox">
+S&amp;P 500 (Chart)
+<i class="glyphicon glyphicon-question-sign" style="color: #428bca" title="Chart limited to S&amp;P 500 companies."></i>
+</div>
+</div>
+<div class="form-group pull-left" style="width: 100%">
+<div style="float: left">
+<input checked="" class="excl_outliers" name="excl_outliers" type="checkbox">
+No Outliers
+<i class="glyphicon glyphicon-question-sign" style="color: #428bca" title="Regression analysis excludes outlier multiples. We define outliers as multiples > 99 or > 2.5 standard deviations from the mean."></i>
+</div>
+</div>
+<div class="form-group pull-left" style="width: 100%">
+<div style="float: left">
+<input checked="" class="exclude_display" name="exclude_display" type="checkbox">
+No Outliers (Chart)
+<i class="glyphicon glyphicon-question-sign" style="color: #428bca" title="Chart excludes outlier multiples. We define outliers as multiples > 99 or > 2.5 standard deviations from the mean."></i>
+</div>
+</div>
+<input id="page_ld_c" name="page_load_count" type="hidden" value="1">
+
+</div>
+</form>
+</div>
+</div>
+<div class="col-md-10 order-item-2" style="overflow: hidden">
+<br>
+<br>
+<div class="col-md-9 col-md-offset-3">
+<div class="col-md-5">
+<p class="text-center" id="chart-lable">Growth vs. Valuation</p>
+</div>
+<div class="col-md-4">
+<!-- = link_to ' ', load_scatterplot_chart_companies_path(format: 'csv'), method: :post, id: "scatterplot_csv", class: 'glyphicon  glyphicon-download', title: "Download", :style => "display: none" -->
+<i class="glyphicon glyphicon-share share_chart" style="color: rgb(66, 139, 202);" title="Share this chart" type="button" value="Share"></i>
+</div>
+</div>
+<div class="col-md-offset-4">
+<div class="row">
+<div class="col-md-8">
+<p id="eq-lable">y = 82.5x + 9.2 | R² : 81.0% | S = 2.2 (14.2%)<br>n = 17 | X̄ = 15.3</p>
+</div>
+<span class="col-md-1">
+<i class="glyphicon glyphicon-info-sign info_chart" style="color: rgb(66, 139, 202);" title="Regression data for the trendline" type="button"></i>
+</span>
+</div>
+<p id="bottom-text">Showing 50 out of 97 companies</p>
+<p id="outliers">Outliers: Teradata Corporation, Autodesk</p>
+</div>
+<div id="scatter-plot-div">
+	<img src="svg/graph.svg" alt="Graph Image" class="img-responsive center-block">
+</div>
+<div class="col-md-offset-1"></div>
+</div>
+<div data-value="[&quot;Software&quot;, &quot;Software&quot;]" id="load_chart" style="display: none"></div>
+<div id="modal-div"></div>
+<!-- Control color of labels for the points in LN 1927 -->
+</div>
+<div class="text-center col-md-12" style="padding-top: 50px">
+<hr>
+<p>
+Consensus estimate data from <a href="http://www.zacksdata.com"> Zacks Investment Research, Inc.</a>
+</p>
+<a href="/tos">Terms of Service</a>
+|
+<a href="/privacy">Privacy Policy</a>
+|
+<a href="/welcome">About</a>
+|
+<a href="mailto:info@gettrendline.com">Email</a>
+|
+<a href="http://twitter.com/GetTrendline">Twitter</a>
+<br>
+<br>
+<input id="check-signed-in-usr" name="user_signed" type="hidden" value="false">
+<div class="col-md-8 col-md-offset-2">
+<p class="small" style="font-size: 10px">
+Trendline does not recommend, buy, or sell investments. The Content on this website is intended to be used and must be used for informational purposes only. It is very important to do your own analysis before making any investment based on your own personal circumstances. Your use of Trendline is subject to the <a href="http://www.gettrendline.com/tos">Terms of Service</a>. By using Trendline, you signify your acceptance of the <a href="http://www.gettrendline.com/tos">Terms of Service</a>. If you do not agree to the <a href="http://www.gettrendline.com/tos">Terms of Service</a>, do not use Trendline.
+</p>
+</div>
+<br>
+<br>
+</div>
+<div class="modal fade" data-backdrop="static" data-keyboard="false" id="not-authorised-modal" role="dialog" tabindex="-1">
+<div class="modal-dialog" role="document">
+<div class="modal-content">
+<div class="modal-header">
+<h3 class="modal-title">Sorry, you need to sign up to acccess this content.</h3>
+</div>
+<div class="modal-body">
+<br>
+<center>
+<a class="btn btn-lg btn-orange" href="/users/sign_up">Start Your Free Trial</a>
+<br>
+<br>
+<a data-dismiss="modal" style="cursor: pointer">No Thanks!</a>
+</center>
+</div>
+</div>
+</div>
+</div>
+
+<!--<script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js" type="text/javascript"></script>-->
+<script src="./js/d3.js" type="text/javascript"></script>
+<script>
+  $(document).ready( function() {
+    if($("#load_chart").data("value"))
+      $(".customized_chart").click()
+  } );
+</script>
+
+<script src="http://platform.twitter.com/oct.js" type="text/javascript"></script>
+<script type="text/javascript">
+twttr.conversion.trackPid('l4iha');
+</script>
+<noscript>
+&lt;img height="1" width="1" style="display:none;" alt="" src="https://analytics.twitter.com/i/adsct?txn_id=l4iha&amp;p_id=Twitter" /&gt;
+&lt;img height="1" width="1" style="display:none;" alt="" src="//t.co/i/adsct?txn_id=l4iha&amp;p_id=Twitter" /&gt;
+</noscript>
+<script>
+  // (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  // (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  // m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  // })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  // ga('create', 'UA-50137437-1', 'thestartup100.com');
+  // ga('require', 'linkid', 'linkid.js');
+  // ga('send', 'pageview');
+
+</script>
+</main>
+<script type="text/javascript">if (!NREUMQ.f) { NREUMQ.f=function() {
+NREUMQ.push(["load",new Date().getTime()]);
+var e=document.createElement("script");
+e.type="text/javascript";
+e.src=(("http:"===document.location.protocol)?"http:":"https:") + "//" +
+  "js-agent.newrelic.com/nr-100.js";
+document.body.appendChild(e);
+if(NREUMQ.a)NREUMQ.a();
+};
+NREUMQ.a=window.onload;window.onload=NREUMQ.f;
+};
+NREUMQ.push(["nrfj","bam.nr-data.net","0d82b46418","3682922","dgkPQBdbDwlSSxtSDVgWAFoMURBKRFpVRRZQFBFYCkA8Bl9YRkU=",12,565,new Date().getTime(),"","","","",""]);</script>
+
+<script src="https://analytics.twitter.com/i/adsct?p_id=Twitter&amp;p_user_id=0&amp;txn_id=l4iha&amp;tw_sale_amount=0&amp;tw_order_quantity=0&amp;tw_iframe_status=0&amp;tpx_cb=twttr.conversion.loadPixels" type="text/javascript"></script><script type="text/javascript" src="http://js-agent.newrelic.com/nr-100.js"></script><script type="text/javascript" src="http://bam.nr-data.net/1/0d82b46418?a=3682922&amp;be=1206&amp;qt=12&amp;ap=565&amp;dc=1294&amp;fe=2361&amp;to=dgkPQBdbDwlSSxtSDVgWAFoMURBKRFpVRRZQFBFYCkA8Bl9YRkU%3D&amp;v=42&amp;jsonp=NREUM.setToken&amp;perf=%7B%22timing%22%3A%7B%22of%22%3A1495096071889%2C%20%22n%22%3A0%2C%20%22u%22%3A1189%2C%20%22ue%22%3A1190%2C%20%22dl%22%3A1202%2C%20%22di%22%3A2500%2C%20%22ds%22%3A2500%2C%20%22de%22%3A2980%2C%20%22dc%22%3A3564%2C%20%22l%22%3A3564%2C%20%22le%22%3A3583%2C%20%22r%22%3A1%2C%20%22re%22%3A338%2C%20%22f%22%3A338%2C%20%22dn%22%3A338%2C%20%22dne%22%3A338%2C%20%22c%22%3A338%2C%20%22ce%22%3A338%2C%20%22rq%22%3A341%2C%20%22rp%22%3A1186%2C%20%22rpe%22%3A1738%7D%2C%20%22navigation%22%3A%7B%22rc%22%3A1%7D%7D"></script><div class="d3-tip" style="position: absolute; opacity: 0; background: rgb(255, 255, 255);"></div></body></html>
