@@ -1,1 +1,1 @@
-.flex-first{display:flex;flex-flow:row wrap;}.order-item-1{order:-1;}.order-item-2{order:1;}@media (max-width: 991px){.order-item-1{order:1;}.order-item-2{order:-1;}#flex-svg{width:200;}}
+.flex-first{display:flex;flex-flow:row wrap;}.order-item-1{order:-1;}.order-item-2{order:1;}@media (max-width: 991px){.order-item-1{order:1;}.order-item-2{order:-1;}#flex-svg{width:200;}} @media (max-width: 550px){.chart-lable{font-size:14px;}.eq-lable{font-size:12px !important; text-align: center;}.bottom-text{font-size:14px !important;}}

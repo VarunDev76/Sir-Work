@@ -665,12 +665,12 @@ No Outliers (Chart)
 </form>
 </div>
 </div>
-<div class="col-md-10 order-item-2" style="overflow: hidden">
+<div class="col-md-10 order-item-2" style="overflow: hidden; letter-spacing:1px;">
 <br>
 <br>
 <div class="col-md-9 col-md-offset-3">
-<div class="col-md-5">
-<p class="text-center" id="chart-lable">Growth vs. Valuation</p>
+<div class="col-md-5 text-center">
+<p class="text-center text-xs-center"> <h2 id="chart-lable"> <strong> Growth vs. Valuation : </strong> </h2></p>
 </div>
 <div class="col-md-4">
 <!-- = link_to ' ', load_scatterplot_chart_companies_path(format: 'csv'), method: :post, id: "scatterplot_csv", class: 'glyphicon  glyphicon-download', title: "Download", :style => "display: none" -->
@@ -680,14 +680,14 @@ No Outliers (Chart)
 <div class="col-md-offset-4">
 <div class="row">
 <div class="col-md-8">
-<p id="eq-lable">y = 82.5x + 9.2 | R² : 81.0% | S = 2.2 (14.2%)<br>n = 17 | X̄ = 15.3</p>
+<p class="eq-lable" style="font-size:15px;"> <span class="bottom-text" style="font-size:18px;"> <b> y </b> </span> = 82.5x + 9.2 | R² : 81.0% | S = 2.2 (14.2%)<br> <span class="bottom-text" style="font-size:18px;"> <b> n </b> </span> = 17 | X̄ = 15.3</p>
 </div>
 <span class="col-md-1">
 <i class="glyphicon glyphicon-info-sign info_chart" style="color: rgb(66, 139, 202);" title="Regression data for the trendline" type="button"></i>
 </span>
 </div>
-<p id="bottom-text">Showing 50 out of 97 companies</p>
-<p id="outliers">Outliers: Teradata Corporation, Autodesk</p>
+<p id="bottom-text" class="eq-lable">Showing 50 out of 97 companies</p>
+<p id="outliers" class="eq-lable" style="font-size:15px;"> <span class="bottom-text" style="font-size:18px;"> <strong> Outliers: </strong> </span> Teradata Corporation, Autodesk</p>
 </div>
 <div id="scatter-plot-div">
 	<img src="svg/graph.svg" alt="Graph Image" class="img-responsive center-block">
